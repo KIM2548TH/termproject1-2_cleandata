@@ -5906,3 +5906,36 @@ Alternately, you can install this by running `pip install pycaret[models]`
 2025-02-25 14:21:44,427:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
   warnings.warn(
 
+2025-02-25 14:22:09,964:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-25 14:22:09,965:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-25 14:22:12,860:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-25 14:22:12,861:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-25 14:22:12,873:INFO:Calculating mean and std
+2025-02-25 14:22:12,874:INFO:Creating metrics dataframe
+2025-02-25 14:22:12,878:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-25 14:22:12,884:INFO:Finalizing model
+2025-02-25 14:24:15,392:INFO:Uploading results into container
+2025-02-25 14:24:15,392:INFO:Uploading model into container now
+2025-02-25 14:24:15,415:INFO:_master_model_container: 1
+2025-02-25 14:24:15,415:INFO:_display_container: 2
+2025-02-25 14:24:15,417:INFO:AutoARIMA(random_state=123, sp=7, suppress_warnings=True)
+2025-02-25 14:24:15,417:INFO:create_model() successfully completed......................................
+2025-02-25 14:24:24,129:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-25 14:24:24,129:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-25 14:24:24,132:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
