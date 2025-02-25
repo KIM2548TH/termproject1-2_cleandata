@@ -5949,3 +5949,2107 @@ Alternately, you can install this by running `pip install pycaret[models]`
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2025-02-25 22:56:27,411:WARNING:
 'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:29:48,806:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:07,540:WARNING:/tmp/ipykernel_10661/392283368.py:5: FutureWarning: DataFrame.interpolate with object dtype is deprecated and will raise in a future version. Call obj.infer_objects(copy=False) before interpolating instead.
+  df = df.interpolate()
+
+2025-02-26 00:31:10,103:WARNING:/tmp/ipykernel_10661/3344875172.py:2: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df['timezone'] = df['timezone'].fillna(method='ffill')
+
+2025-02-26 00:31:15,702:INFO:PyCaret TSForecastingExperiment
+2025-02-26 00:31:15,702:INFO:Logging name: ts-default-name
+2025-02-26 00:31:15,702:INFO:ML Usecase: MLUsecase.TIME_SERIES
+2025-02-26 00:31:15,702:INFO:version 3.3.2
+2025-02-26 00:31:15,703:INFO:Initializing setup()
+2025-02-26 00:31:15,703:INFO:self.USI: 0fbd
+2025-02-26 00:31:15,703:INFO:self._variable_keys: {'exp_id', 'strictly_positive', 'X_transformed', 'memory', 'idx', 'X', 'seed', 'y', 'primary_sp_to_use', 'log_plots_param', 'gpu_param', 'model_engines', 'enforce_exogenous', 'X_train', 'all_sps_to_use', 'X_test_transformed', 'candidate_sps', 'X_train_transformed', 'logging_param', 'X_test', '_ml_usecase', 'fold_param', 'gpu_n_jobs_param', 'n_jobs_param', 'USI', 'seasonality_present', 'y_train_transformed', 'index_type', 'significant_sps_no_harmonics', 'approach_type', 'exp_name_log', 'y_transformed', 'fold_generator', '_available_plots', 'html_param', 'fh', 'exogenous_present', 'enforce_pi', 'y_test_transformed', 'data', 'y_train', 'pipeline', 'y_test', 'significant_sps'}
+2025-02-26 00:31:15,703:INFO:Checking environment
+2025-02-26 00:31:15,703:INFO:python_version: 3.10.13
+2025-02-26 00:31:15,703:INFO:python_build: ('main', 'Feb 25 2025 11:52:36')
+2025-02-26 00:31:15,703:INFO:machine: x86_64
+2025-02-26 00:31:15,703:INFO:platform: Linux-6.12.16-amd64-x86_64-with-glibc2.40
+2025-02-26 00:31:15,703:INFO:Memory: svmem(total=15912001536, available=7686725632, percent=51.7, used=7635791872, free=5026926592, active=8363360256, inactive=1288998912, buffers=205533184, cached=3043749888, shared=240398336, slab=481419264)
+2025-02-26 00:31:15,704:INFO:Physical Core: 6
+2025-02-26 00:31:15,704:INFO:Logical Core: 12
+2025-02-26 00:31:15,704:INFO:Checking libraries
+2025-02-26 00:31:15,704:INFO:System:
+2025-02-26 00:31:15,704:INFO:    python: 3.10.13 (main, Feb 25 2025, 11:52:36) [GCC 14.2.0]
+2025-02-26 00:31:15,704:INFO:executable: /home/kimbiaw/term_project1-2/venv/bin/python
+2025-02-26 00:31:15,704:INFO:   machine: Linux-6.12.16-amd64-x86_64-with-glibc2.40
+2025-02-26 00:31:15,704:INFO:PyCaret required dependencies:
+2025-02-26 00:31:15,735:INFO:                 pip: 25.0.1
+2025-02-26 00:31:15,735:INFO:          setuptools: 65.5.0
+2025-02-26 00:31:15,735:INFO:             pycaret: 3.3.2
+2025-02-26 00:31:15,735:INFO:             IPython: 8.32.0
+2025-02-26 00:31:15,735:INFO:          ipywidgets: 8.1.5
+2025-02-26 00:31:15,735:INFO:                tqdm: 4.67.1
+2025-02-26 00:31:15,735:INFO:               numpy: 1.26.4
+2025-02-26 00:31:15,735:INFO:              pandas: 2.1.4
+2025-02-26 00:31:15,735:INFO:              jinja2: 3.1.5
+2025-02-26 00:31:15,735:INFO:               scipy: 1.11.4
+2025-02-26 00:31:15,735:INFO:              joblib: 1.3.2
+2025-02-26 00:31:15,735:INFO:             sklearn: 1.4.2
+2025-02-26 00:31:15,735:INFO:                pyod: 2.0.3
+2025-02-26 00:31:15,735:INFO:            imblearn: 0.13.0
+2025-02-26 00:31:15,735:INFO:   category_encoders: 2.7.0
+2025-02-26 00:31:15,735:INFO:            lightgbm: 4.6.0
+2025-02-26 00:31:15,735:INFO:               numba: 0.61.0
+2025-02-26 00:31:15,735:INFO:            requests: 2.32.3
+2025-02-26 00:31:15,735:INFO:          matplotlib: 3.7.5
+2025-02-26 00:31:15,735:INFO:          scikitplot: 0.3.7
+2025-02-26 00:31:15,735:INFO:         yellowbrick: 1.5
+2025-02-26 00:31:15,736:INFO:              plotly: 5.24.1
+2025-02-26 00:31:15,736:INFO:    plotly-resampler: Not installed
+2025-02-26 00:31:15,736:INFO:             kaleido: 0.2.1
+2025-02-26 00:31:15,736:INFO:           schemdraw: 0.15
+2025-02-26 00:31:15,736:INFO:         statsmodels: 0.14.4
+2025-02-26 00:31:15,736:INFO:              sktime: 0.26.0
+2025-02-26 00:31:15,736:INFO:               tbats: 1.1.3
+2025-02-26 00:31:15,736:INFO:            pmdarima: 2.0.4
+2025-02-26 00:31:15,736:INFO:              psutil: 7.0.0
+2025-02-26 00:31:15,736:INFO:          markupsafe: 3.0.2
+2025-02-26 00:31:15,736:INFO:             pickle5: Not installed
+2025-02-26 00:31:15,736:INFO:         cloudpickle: 3.1.1
+2025-02-26 00:31:15,736:INFO:         deprecation: 2.1.0
+2025-02-26 00:31:15,736:INFO:              xxhash: 3.5.0
+2025-02-26 00:31:15,736:INFO:           wurlitzer: 3.1.1
+2025-02-26 00:31:15,736:INFO:PyCaret optional dependencies:
+2025-02-26 00:31:15,750:INFO:                shap: Not installed
+2025-02-26 00:31:15,750:INFO:           interpret: Not installed
+2025-02-26 00:31:15,750:INFO:                umap: Not installed
+2025-02-26 00:31:15,750:INFO:     ydata_profiling: Not installed
+2025-02-26 00:31:15,750:INFO:  explainerdashboard: Not installed
+2025-02-26 00:31:15,750:INFO:             autoviz: Not installed
+2025-02-26 00:31:15,750:INFO:           fairlearn: Not installed
+2025-02-26 00:31:15,750:INFO:          deepchecks: Not installed
+2025-02-26 00:31:15,750:INFO:             xgboost: Not installed
+2025-02-26 00:31:15,750:INFO:            catboost: Not installed
+2025-02-26 00:31:15,750:INFO:              kmodes: Not installed
+2025-02-26 00:31:15,750:INFO:             mlxtend: Not installed
+2025-02-26 00:31:15,751:INFO:       statsforecast: Not installed
+2025-02-26 00:31:15,751:INFO:        tune_sklearn: Not installed
+2025-02-26 00:31:15,751:INFO:                 ray: Not installed
+2025-02-26 00:31:15,751:INFO:            hyperopt: Not installed
+2025-02-26 00:31:15,751:INFO:              optuna: Not installed
+2025-02-26 00:31:15,751:INFO:               skopt: Not installed
+2025-02-26 00:31:15,751:INFO:              mlflow: Not installed
+2025-02-26 00:31:15,751:INFO:              gradio: Not installed
+2025-02-26 00:31:15,751:INFO:             fastapi: Not installed
+2025-02-26 00:31:15,751:INFO:             uvicorn: Not installed
+2025-02-26 00:31:15,751:INFO:              m2cgen: Not installed
+2025-02-26 00:31:15,751:INFO:           evidently: Not installed
+2025-02-26 00:31:15,751:INFO:               fugue: Not installed
+2025-02-26 00:31:15,751:INFO:           streamlit: Not installed
+2025-02-26 00:31:15,751:INFO:             prophet: Not installed
+2025-02-26 00:31:15,751:INFO:None
+2025-02-26 00:31:15,756:INFO:Set Forecast Horizon.
+2025-02-26 00:31:15,756:INFO:Set up Train-Test Splits.
+2025-02-26 00:31:15,764:INFO:Preparing preprocessing pipeline...
+2025-02-26 00:31:15,764:INFO:Set up imputation for Exogenous variable(s).
+2025-02-26 00:31:15,836:INFO:Finished creating preprocessing pipeline.
+2025-02-26 00:31:15,841:INFO:Pipeline: ForecastingPipeline(steps=[('transformer_exogenous',
+                            TransformerPipeline(steps=[('numerical_imputer',
+                                                        Imputer(method='mean',
+                                                                random_state=123))])),
+                           ('forecaster',
+                            TransformedTargetForecaster(steps=[('model',
+                                                                DummyForecaster())]))])
+2025-02-26 00:31:15,841:INFO:Set up Seasonal Period.
+2025-02-26 00:31:15,849:INFO:Setting the seasonal component type - 'add' or 'mul'.
+2025-02-26 00:31:15,850:INFO:Checking if data is strictly positive.
+2025-02-26 00:31:15,888:INFO:Creating final display dataframe.
+2025-02-26 00:31:15,908:INFO:Setup Display Container:                                           Description  \
+0                                          session_id   
+1                                              Target   
+2                                            Approach   
+3                                 Exogenous Variables   
+4                                 Original data shape   
+5                              Transformed data shape   
+6                         Transformed train set shape   
+7                          Transformed test set shape   
+8                            Rows with missing values   
+9                                      Fold Generator   
+10                                        Fold Number   
+11                        Enforce Prediction Interval   
+12                    Splits used for hyperparameters   
+13                    User Defined Seasonal Period(s)   
+14                            Ignore Seasonality Test   
+15                         Seasonality Detection Algo   
+16                             Max Period to Consider   
+17                          Seasonal Period(s) Tested   
+18                     Significant Seasonal Period(s)   
+19   Significant Seasonal Period(s) without Harmonics   
+20                                   Remove Harmonics   
+21                             Harmonics Order Method   
+22                           Num Seasonalities to Use   
+23                           All Seasonalities to Use   
+24                                Primary Seasonality   
+25                                Seasonality Present   
+26                                   Seasonality Type   
+27                           Target Strictly Positive   
+28                                 Target White Noise   
+29                                      Recommended d   
+30                             Recommended Seasonal D   
+31                                         Preprocess   
+32                      Numerical Imputation (Target)   
+33                            Transformation (Target)   
+34                                   Scaling (Target)   
+35  Feature Engineering (Target) - Reduced Regression   
+36                   Numerical Imputation (Exogenous)   
+37                         Transformation (Exogenous)   
+38                                Scaling (Exogenous)   
+39                                           CPU Jobs   
+40                                            Use GPU   
+41                                     Log Experiment   
+42                                    Experiment Name   
+43                                                USI   
+
+                                   Value  
+0                                    123  
+1                                 pm_2_5  
+2                             Univariate  
+3                                Present  
+4                               (614, 5)  
+5                               (614, 5)  
+6                               (613, 5)  
+7                                 (1, 5)  
+8                                   0.0%  
+9                ExpandingWindowSplitter  
+10                                     3  
+11                                 False  
+12                                   all  
+13                                  None  
+14                                 False  
+15                                  auto  
+16                                    60  
+17  [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15]  
+18  [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15]  
+19              [10, 15, 8, 6, 7, 9, 11]  
+20                                 False  
+21                          harmonic_max  
+22                                     1  
+23                                   [2]  
+24                                     2  
+25                                  True  
+26                                   mul  
+27                                  True  
+28                                    No  
+29                                     0  
+30                                     0  
+31                                  True  
+32                                  None  
+33                                  None  
+34                                  None  
+35                                 False  
+36                                  mean  
+37                                  None  
+38                                  None  
+39                                    -1  
+40                                 False  
+41                                 False  
+42                       ts-default-name  
+43                                  0fbd  
+2025-02-26 00:31:15,916:INFO:Engine successfully changes for model 'auto_arima' to 'pmdarima'.
+2025-02-26 00:31:15,933:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:15,933:INFO:Engine for model 'lr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,933:INFO:Engine for model 'en_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,934:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,934:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,935:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,935:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,936:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,939:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,941:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,941:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,942:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,942:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,943:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,943:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,944:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,944:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,944:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,944:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,944:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,944:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,944:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,949:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:15,949:INFO:Engine for model 'lr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,950:INFO:Engine for model 'en_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,950:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,950:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,951:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,951:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,951:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,954:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,956:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,956:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,957:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,957:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,958:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,958:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,958:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,958:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,959:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,959:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,959:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,959:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,959:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,959:INFO:Engine successfully changes for model 'lr_cds_dt' to 'sklearn'.
+2025-02-26 00:31:15,963:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:15,963:INFO:Engine for model 'en_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,963:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,964:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,964:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,965:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,965:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,967:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,970:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,970:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,970:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,971:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,971:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,972:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,972:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,972:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,972:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,972:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,972:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,973:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,973:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,976:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:15,977:INFO:Engine for model 'en_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,977:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,977:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,978:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,978:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,978:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,982:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,985:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,986:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,987:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,987:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,988:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,989:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,989:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,989:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,989:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,989:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,990:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,990:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,990:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:15,990:INFO:Engine successfully changes for model 'en_cds_dt' to 'sklearn'.
+2025-02-26 00:31:15,996:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:15,997:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,998:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,999:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:15,999:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,000:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,003:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,007:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,007:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,008:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,008:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,009:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,009:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,010:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,010:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,010:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,010:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,011:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,011:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,011:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,017:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,017:INFO:Engine for model 'ridge_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,018:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,018:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,018:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,019:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,022:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,024:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,025:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,025:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,026:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,026:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,027:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,027:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,028:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,028:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,028:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,028:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,028:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,028:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,029:INFO:Engine successfully changes for model 'ridge_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,033:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,034:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,034:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,035:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,035:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,038:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,040:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,040:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,041:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,041:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,042:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,042:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,042:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,042:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,042:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,043:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,043:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,043:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,043:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,048:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,049:INFO:Engine for model 'lasso_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,050:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,050:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,050:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,053:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,055:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,056:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,056:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,056:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,057:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,057:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,058:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,058:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,058:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,058:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,058:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,058:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,058:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,059:INFO:Engine successfully changes for model 'lasso_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,063:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,064:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,064:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,065:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,067:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,070:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,070:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,071:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,071:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,072:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,072:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,073:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,073:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,073:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,073:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,073:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,073:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,074:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,078:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,079:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,079:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,080:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,082:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,085:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,085:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,086:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,086:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,086:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,087:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,087:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,087:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,087:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,087:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,087:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,088:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,088:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,088:INFO:Engine successfully changes for model 'lar_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,091:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,092:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,093:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,093:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,096:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,097:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,098:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,098:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,098:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,098:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,099:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,099:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,099:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,099:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,099:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,099:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,099:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,099:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,102:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,103:INFO:Engine for model 'llar_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,103:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,103:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,105:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,107:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,107:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,107:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,108:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,108:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,108:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,108:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,108:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,108:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,108:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,109:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,109:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,109:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,109:INFO:Engine successfully changes for model 'llar_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,111:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,113:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,113:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,114:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,116:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,116:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,117:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,117:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,117:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,118:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,118:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,118:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,118:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,118:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,118:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,118:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,118:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,121:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,122:INFO:Engine for model 'br_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,122:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,124:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,126:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,126:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,126:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,127:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,127:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,127:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,127:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,127:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,127:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,127:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,128:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,128:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,128:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,128:INFO:Engine successfully changes for model 'br_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,130:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,131:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,133:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,135:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,135:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,135:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,135:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,135:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,136:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,136:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,136:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,136:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,136:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,136:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,136:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,136:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,139:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,140:INFO:Engine for model 'huber_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,142:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,143:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,143:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,144:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,144:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,144:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,144:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,144:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,144:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,145:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,145:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,145:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,145:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,145:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,145:INFO:Engine successfully changes for model 'huber_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,147:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,151:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,153:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,153:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,153:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,153:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,154:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,154:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,154:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,154:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,154:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,154:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,155:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,155:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,155:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,157:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,160:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,161:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,161:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,162:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,162:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,162:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,162:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,163:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,163:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,163:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,163:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,163:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,163:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,163:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,163:INFO:Engine successfully changes for model 'par_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,166:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,168:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,170:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,170:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,170:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,171:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,171:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,171:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,172:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,172:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,172:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,172:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,172:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,172:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,172:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,174:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,177:INFO:Engine for model 'omp_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,179:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,179:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,179:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,180:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,180:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,180:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,180:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,180:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,180:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,180:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,181:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,181:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,181:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,181:INFO:Engine successfully changes for model 'omp_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,183:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,187:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,187:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,188:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,188:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,188:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,188:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,189:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,189:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,189:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,189:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,189:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,189:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,189:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,192:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,196:INFO:Engine for model 'knn_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,196:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,196:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,197:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,197:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,197:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,197:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,197:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,197:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,197:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,198:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,198:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,198:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,198:INFO:Engine successfully changes for model 'knn_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,201:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,205:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,206:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,206:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,206:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,207:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,207:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,207:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,207:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,207:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,207:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,207:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,207:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,210:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,216:INFO:Engine for model 'dt_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,216:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,217:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,217:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,217:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,217:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,217:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,217:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,217:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,218:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,218:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,218:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,218:INFO:Engine successfully changes for model 'dt_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,220:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,226:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,226:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,226:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,227:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,227:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,227:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,227:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,227:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,227:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,227:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,227:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,230:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,236:INFO:Engine for model 'rf_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,236:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,236:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,237:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,237:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,237:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,237:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,237:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,238:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,238:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,238:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,238:INFO:Engine successfully changes for model 'rf_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,240:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,246:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,246:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,247:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,247:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,247:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,247:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,247:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,247:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,247:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,247:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,250:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,256:INFO:Engine for model 'et_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,256:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,257:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,257:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,257:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,257:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,257:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,258:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,258:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,258:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,258:INFO:Engine successfully changes for model 'et_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,260:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,266:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,267:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,267:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,267:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,267:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,267:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,268:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,268:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,268:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,271:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,277:INFO:Engine for model 'gbr_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,277:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,277:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,277:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,277:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,277:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,278:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,278:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,278:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,278:INFO:Engine successfully changes for model 'gbr_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,281:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,287:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,287:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,287:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,287:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,287:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,288:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,288:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,288:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,291:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,297:INFO:Engine for model 'ada_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,297:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,297:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,297:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,298:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,298:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,298:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,298:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,298:INFO:Engine successfully changes for model 'ada_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,301:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,307:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,307:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,307:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,307:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,307:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,307:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,307:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,310:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,316:INFO:Engine for model 'xgboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,316:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,317:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,317:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,317:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,317:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,317:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,317:INFO:Engine successfully changes for model 'xgboost_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,320:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,326:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,326:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,326:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,327:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,327:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,327:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,329:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,335:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,335:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,335:INFO:Engine for model 'lightgbm_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,336:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,336:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,336:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,336:INFO:Engine successfully changes for model 'lightgbm_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,338:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,344:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,344:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,344:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,344:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,345:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,348:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,353:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,354:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,354:INFO:Engine for model 'catboost_cds_dt' has not been set explicitly, hence returning None.
+2025-02-26 00:31:16,354:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,354:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,354:INFO:Engine successfully changes for model 'catboost_cds_dt' to 'sklearn'.
+2025-02-26 00:31:16,357:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,362:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,362:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,362:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,362:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,365:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,370:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,370:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,371:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,371:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,373:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,379:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,379:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,380:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,380:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,382:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:16,388:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,388:WARNING:
+'xgboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install xgboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,389:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,389:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2025-02-26 00:31:16,390:INFO:setup() successfully completed in 0.69s...............
+2025-02-26 00:31:16,390:INFO:Initializing compare_models()
+2025-02-26 00:31:16,391:INFO:compare_models(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, include=None, fold=None, round=4, cross_validation=True, sort=MASE, n_select=1, budget_time=None, turbo=True, errors=ignore, fit_kwargs=None, groups=None, experiment_custom_tags=None, probability_threshold=None, verbose=True, parallel=None, caller_params={'self': <pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, 'include': None, 'exclude': None, 'fold': None, 'round': 4, 'cross_validation': True, 'sort': 'MASE', 'n_select': 1, 'budget_time': None, 'turbo': True, 'errors': 'ignore', 'fit_kwargs': None, 'experiment_custom_tags': None, 'engine': None, 'verbose': True, 'parallel': None, '__class__': <class 'pycaret.time_series.forecasting.oop.TSForecastingExperiment'>}, exclude=None)
+2025-02-26 00:31:16,391:INFO:Checking exceptions
+2025-02-26 00:31:16,392:INFO:Preparing display monitor
+2025-02-26 00:31:16,412:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/internal/pycaret_experiment/supervised_experiment.py:713: UserWarning: Unsupported estimator `ensemble_forecaster` for method `compare_models()`, removing from model_library
+  warnings.warn(
+
+2025-02-26 00:31:16,412:INFO:Initializing ARIMA
+2025-02-26 00:31:16,413:INFO:Total runtime is 1.3033548990885417e-06 minutes
+2025-02-26 00:31:16,416:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:16,416:INFO:Initializing create_model()
+2025-02-26 00:31:16,416:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:16,416:INFO:Checking exceptions
+2025-02-26 00:31:16,416:INFO:Importing libraries
+2025-02-26 00:31:16,416:INFO:Copying training dataset
+2025-02-26 00:31:16,418:INFO:Defining folds
+2025-02-26 00:31:16,418:INFO:Declaring metric variables
+2025-02-26 00:31:16,420:INFO:Importing untrained model
+2025-02-26 00:31:16,426:INFO:ARIMA Imported successfully
+2025-02-26 00:31:16,433:INFO:Starting cross validation
+2025-02-26 00:31:16,433:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:18,072:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:18,072:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:18,144:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:18,144:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:18,153:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:18,153:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:18,163:INFO:Calculating mean and std
+2025-02-26 00:31:18,165:INFO:Creating metrics dataframe
+2025-02-26 00:31:18,169:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:18,171:INFO:Uploading results into container
+2025-02-26 00:31:18,172:INFO:Uploading model into container now
+2025-02-26 00:31:18,172:INFO:_master_model_container: 1
+2025-02-26 00:31:18,172:INFO:_display_container: 2
+2025-02-26 00:31:18,173:INFO:ARIMA(seasonal_order=(0, 1, 0, 2))
+2025-02-26 00:31:18,173:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:18,295:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:18,295:INFO:Creating metrics dataframe
+2025-02-26 00:31:18,301:INFO:Initializing Auto ARIMA
+2025-02-26 00:31:18,301:INFO:Total runtime is 0.03146993319193522 minutes
+2025-02-26 00:31:18,303:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:18,303:INFO:Initializing create_model()
+2025-02-26 00:31:18,303:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=auto_arima, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:18,303:INFO:Checking exceptions
+2025-02-26 00:31:18,303:INFO:Importing libraries
+2025-02-26 00:31:18,303:INFO:Copying training dataset
+2025-02-26 00:31:18,305:INFO:Defining folds
+2025-02-26 00:31:18,305:INFO:Declaring metric variables
+2025-02-26 00:31:18,308:INFO:Importing untrained model
+2025-02-26 00:31:18,311:INFO:Auto ARIMA Imported successfully
+2025-02-26 00:31:18,318:INFO:Starting cross validation
+2025-02-26 00:31:18,319:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:26,794:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:26,795:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:27,635:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:27,636:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:32,824:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:32,825:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:32,828:INFO:Calculating mean and std
+2025-02-26 00:31:32,829:INFO:Creating metrics dataframe
+2025-02-26 00:31:32,831:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:32,833:INFO:Uploading results into container
+2025-02-26 00:31:32,833:INFO:Uploading model into container now
+2025-02-26 00:31:32,833:INFO:_master_model_container: 2
+2025-02-26 00:31:32,833:INFO:_display_container: 2
+2025-02-26 00:31:32,834:INFO:AutoARIMA(random_state=123, sp=2, suppress_warnings=True)
+2025-02-26 00:31:32,834:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:32,944:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:32,944:INFO:Creating metrics dataframe
+2025-02-26 00:31:32,949:INFO:Initializing Croston
+2025-02-26 00:31:32,949:INFO:Total runtime is 0.27561151186625166 minutes
+2025-02-26 00:31:32,952:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:32,952:INFO:Initializing create_model()
+2025-02-26 00:31:32,952:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=croston, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:32,952:INFO:Checking exceptions
+2025-02-26 00:31:32,952:INFO:Importing libraries
+2025-02-26 00:31:32,952:INFO:Copying training dataset
+2025-02-26 00:31:32,954:INFO:Defining folds
+2025-02-26 00:31:32,954:INFO:Declaring metric variables
+2025-02-26 00:31:32,956:INFO:Importing untrained model
+2025-02-26 00:31:32,960:INFO:Croston Imported successfully
+2025-02-26 00:31:32,967:INFO:Starting cross validation
+2025-02-26 00:31:32,967:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:34,120:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:34,121:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:34,124:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:34,124:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:34,135:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:34,135:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:34,143:INFO:Calculating mean and std
+2025-02-26 00:31:34,144:INFO:Creating metrics dataframe
+2025-02-26 00:31:34,146:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:34,149:INFO:Uploading results into container
+2025-02-26 00:31:34,149:INFO:Uploading model into container now
+2025-02-26 00:31:34,150:INFO:_master_model_container: 3
+2025-02-26 00:31:34,150:INFO:_display_container: 2
+2025-02-26 00:31:34,150:INFO:Croston()
+2025-02-26 00:31:34,150:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:34,265:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:34,266:INFO:Creating metrics dataframe
+2025-02-26 00:31:34,271:INFO:Initializing Linear w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:34,271:INFO:Total runtime is 0.2976439476013184 minutes
+2025-02-26 00:31:34,273:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:34,273:INFO:Initializing create_model()
+2025-02-26 00:31:34,274:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=lr_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:34,274:INFO:Checking exceptions
+2025-02-26 00:31:34,274:INFO:Importing libraries
+2025-02-26 00:31:34,274:INFO:Copying training dataset
+2025-02-26 00:31:34,275:INFO:Defining folds
+2025-02-26 00:31:34,276:INFO:Declaring metric variables
+2025-02-26 00:31:34,278:INFO:Importing untrained model
+2025-02-26 00:31:34,281:INFO:Linear w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:34,287:INFO:Starting cross validation
+2025-02-26 00:31:34,288:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:35,560:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:35,572:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:35,573:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:35,652:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:35,653:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:35,663:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:35,663:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:35,664:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:35,664:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:35,669:INFO:Calculating mean and std
+2025-02-26 00:31:35,671:INFO:Creating metrics dataframe
+2025-02-26 00:31:35,673:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:35,675:INFO:Uploading results into container
+2025-02-26 00:31:35,675:INFO:Uploading model into container now
+2025-02-26 00:31:35,676:INFO:_master_model_container: 4
+2025-02-26 00:31:35,676:INFO:_display_container: 2
+2025-02-26 00:31:35,678:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=LinearRegression(n_jobs=-1), sp=2,
+                    window_length=2)
+2025-02-26 00:31:35,678:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:35,798:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:35,798:INFO:Creating metrics dataframe
+2025-02-26 00:31:35,804:INFO:Initializing Elastic Net w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:35,804:INFO:Total runtime is 0.32319099903106696 minutes
+2025-02-26 00:31:35,806:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:35,807:INFO:Initializing create_model()
+2025-02-26 00:31:35,807:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=en_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:35,807:INFO:Checking exceptions
+2025-02-26 00:31:35,807:INFO:Importing libraries
+2025-02-26 00:31:35,807:INFO:Copying training dataset
+2025-02-26 00:31:35,809:INFO:Defining folds
+2025-02-26 00:31:35,810:INFO:Declaring metric variables
+2025-02-26 00:31:35,812:INFO:Importing untrained model
+2025-02-26 00:31:35,816:INFO:Elastic Net w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:35,823:INFO:Starting cross validation
+2025-02-26 00:31:35,823:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:35,951:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:35,952:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:35,956:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:36,033:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,033:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,035:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,036:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,039:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,039:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,048:INFO:Calculating mean and std
+2025-02-26 00:31:36,049:INFO:Creating metrics dataframe
+2025-02-26 00:31:36,050:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:36,052:INFO:Uploading results into container
+2025-02-26 00:31:36,052:INFO:Uploading model into container now
+2025-02-26 00:31:36,052:INFO:_master_model_container: 5
+2025-02-26 00:31:36,052:INFO:_display_container: 2
+2025-02-26 00:31:36,053:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=ElasticNet(random_state=123), sp=2,
+                    window_length=2)
+2025-02-26 00:31:36,053:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:36,157:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:36,158:INFO:Creating metrics dataframe
+2025-02-26 00:31:36,163:INFO:Initializing Ridge w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:36,163:INFO:Total runtime is 0.3291775862375896 minutes
+2025-02-26 00:31:36,165:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:36,165:INFO:Initializing create_model()
+2025-02-26 00:31:36,166:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=ridge_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:36,166:INFO:Checking exceptions
+2025-02-26 00:31:36,166:INFO:Importing libraries
+2025-02-26 00:31:36,166:INFO:Copying training dataset
+2025-02-26 00:31:36,168:INFO:Defining folds
+2025-02-26 00:31:36,168:INFO:Declaring metric variables
+2025-02-26 00:31:36,171:INFO:Importing untrained model
+2025-02-26 00:31:36,174:INFO:Ridge w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:36,180:INFO:Starting cross validation
+2025-02-26 00:31:36,181:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:36,305:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:36,308:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:36,309:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:36,389:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,389:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,390:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,390:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,393:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,393:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,401:INFO:Calculating mean and std
+2025-02-26 00:31:36,402:INFO:Creating metrics dataframe
+2025-02-26 00:31:36,404:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:36,406:INFO:Uploading results into container
+2025-02-26 00:31:36,406:INFO:Uploading model into container now
+2025-02-26 00:31:36,406:INFO:_master_model_container: 6
+2025-02-26 00:31:36,407:INFO:_display_container: 2
+2025-02-26 00:31:36,408:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=Ridge(random_state=123), sp=2, window_length=2)
+2025-02-26 00:31:36,408:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:36,513:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:36,513:INFO:Creating metrics dataframe
+2025-02-26 00:31:36,519:INFO:Initializing Lasso w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:36,519:INFO:Total runtime is 0.33511071205139165 minutes
+2025-02-26 00:31:36,521:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:36,521:INFO:Initializing create_model()
+2025-02-26 00:31:36,521:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=lasso_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:36,522:INFO:Checking exceptions
+2025-02-26 00:31:36,522:INFO:Importing libraries
+2025-02-26 00:31:36,522:INFO:Copying training dataset
+2025-02-26 00:31:36,524:INFO:Defining folds
+2025-02-26 00:31:36,524:INFO:Declaring metric variables
+2025-02-26 00:31:36,527:INFO:Importing untrained model
+2025-02-26 00:31:36,531:INFO:Lasso w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:36,538:INFO:Starting cross validation
+2025-02-26 00:31:36,538:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:36,664:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:36,666:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:36,673:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-26 00:31:36,747:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,747:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,751:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,752:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,755:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,755:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,761:INFO:Calculating mean and std
+2025-02-26 00:31:36,762:INFO:Creating metrics dataframe
+2025-02-26 00:31:36,764:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:36,766:INFO:Uploading results into container
+2025-02-26 00:31:36,766:INFO:Uploading model into container now
+2025-02-26 00:31:36,766:INFO:_master_model_container: 7
+2025-02-26 00:31:36,766:INFO:_display_container: 2
+2025-02-26 00:31:36,768:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=Lasso(random_state=123), sp=2, window_length=2)
+2025-02-26 00:31:36,768:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:36,872:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:36,872:INFO:Creating metrics dataframe
+2025-02-26 00:31:36,877:INFO:Initializing Lasso Least Angular Regressor w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:36,877:INFO:Total runtime is 0.3410831809043885 minutes
+2025-02-26 00:31:36,880:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:36,880:INFO:Initializing create_model()
+2025-02-26 00:31:36,880:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=llar_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:36,880:INFO:Checking exceptions
+2025-02-26 00:31:36,880:INFO:Importing libraries
+2025-02-26 00:31:36,880:INFO:Copying training dataset
+2025-02-26 00:31:36,882:INFO:Defining folds
+2025-02-26 00:31:36,882:INFO:Declaring metric variables
+2025-02-26 00:31:36,885:INFO:Importing untrained model
+2025-02-26 00:31:36,888:INFO:Lasso Least Angular Regressor w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:36,894:INFO:Starting cross validation
+2025-02-26 00:31:36,895:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:36,998:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:36,998:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,003:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,003:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,007:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,007:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,016:INFO:Calculating mean and std
+2025-02-26 00:31:37,018:INFO:Creating metrics dataframe
+2025-02-26 00:31:37,019:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:37,021:INFO:Uploading results into container
+2025-02-26 00:31:37,021:INFO:Uploading model into container now
+2025-02-26 00:31:37,021:INFO:_master_model_container: 8
+2025-02-26 00:31:37,021:INFO:_display_container: 2
+2025-02-26 00:31:37,023:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=LassoLars(random_state=123), sp=2,
+                    window_length=2)
+2025-02-26 00:31:37,023:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:37,127:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:37,127:INFO:Creating metrics dataframe
+2025-02-26 00:31:37,133:INFO:Initializing Bayesian Ridge w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:37,133:INFO:Total runtime is 0.345341185728709 minutes
+2025-02-26 00:31:37,135:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:37,135:INFO:Initializing create_model()
+2025-02-26 00:31:37,135:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=br_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:37,135:INFO:Checking exceptions
+2025-02-26 00:31:37,135:INFO:Importing libraries
+2025-02-26 00:31:37,136:INFO:Copying training dataset
+2025-02-26 00:31:37,137:INFO:Defining folds
+2025-02-26 00:31:37,138:INFO:Declaring metric variables
+2025-02-26 00:31:37,140:INFO:Importing untrained model
+2025-02-26 00:31:37,144:INFO:Bayesian Ridge w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:37,151:INFO:Starting cross validation
+2025-02-26 00:31:37,152:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:37,255:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,256:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,257:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,257:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,258:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,258:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,263:INFO:Calculating mean and std
+2025-02-26 00:31:37,264:INFO:Creating metrics dataframe
+2025-02-26 00:31:37,266:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:37,268:INFO:Uploading results into container
+2025-02-26 00:31:37,268:INFO:Uploading model into container now
+2025-02-26 00:31:37,268:INFO:_master_model_container: 9
+2025-02-26 00:31:37,268:INFO:_display_container: 2
+2025-02-26 00:31:37,269:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=BayesianRidge(), sp=2, window_length=2)
+2025-02-26 00:31:37,269:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:37,374:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:37,375:INFO:Creating metrics dataframe
+2025-02-26 00:31:37,381:INFO:Initializing Huber w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:37,381:INFO:Total runtime is 0.3494807958602906 minutes
+2025-02-26 00:31:37,384:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:37,384:INFO:Initializing create_model()
+2025-02-26 00:31:37,384:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=huber_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:37,384:INFO:Checking exceptions
+2025-02-26 00:31:37,384:INFO:Importing libraries
+2025-02-26 00:31:37,384:INFO:Copying training dataset
+2025-02-26 00:31:37,386:INFO:Defining folds
+2025-02-26 00:31:37,386:INFO:Declaring metric variables
+2025-02-26 00:31:37,389:INFO:Importing untrained model
+2025-02-26 00:31:37,392:INFO:Huber w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:37,397:INFO:Starting cross validation
+2025-02-26 00:31:37,398:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:37,485:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/linear_model/_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2025-02-26 00:31:37,486:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/linear_model/_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2025-02-26 00:31:37,486:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/linear_model/_huber.py:342: ConvergenceWarning: lbfgs failed to converge (status=1):
+STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+Increase the number of iterations (max_iter) or scale the data as shown in:
+    https://scikit-learn.org/stable/modules/preprocessing.html
+  self.n_iter_ = _check_optimize_result("lbfgs", opt_res, self.max_iter)
+
+2025-02-26 00:31:37,515:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,515:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,516:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,516:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,517:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,517:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,529:INFO:Calculating mean and std
+2025-02-26 00:31:37,530:INFO:Creating metrics dataframe
+2025-02-26 00:31:37,531:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:37,533:INFO:Uploading results into container
+2025-02-26 00:31:37,533:INFO:Uploading model into container now
+2025-02-26 00:31:37,533:INFO:_master_model_container: 10
+2025-02-26 00:31:37,533:INFO:_display_container: 2
+2025-02-26 00:31:37,534:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=HuberRegressor(), sp=2, window_length=2)
+2025-02-26 00:31:37,534:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:37,639:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:37,639:INFO:Creating metrics dataframe
+2025-02-26 00:31:37,646:INFO:Initializing Orthogonal Matching Pursuit w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:37,646:INFO:Total runtime is 0.3538879076639812 minutes
+2025-02-26 00:31:37,648:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:37,648:INFO:Initializing create_model()
+2025-02-26 00:31:37,648:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=omp_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:37,648:INFO:Checking exceptions
+2025-02-26 00:31:37,648:INFO:Importing libraries
+2025-02-26 00:31:37,648:INFO:Copying training dataset
+2025-02-26 00:31:37,650:INFO:Defining folds
+2025-02-26 00:31:37,650:INFO:Declaring metric variables
+2025-02-26 00:31:37,653:INFO:Importing untrained model
+2025-02-26 00:31:37,657:INFO:Orthogonal Matching Pursuit w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:37,665:INFO:Starting cross validation
+2025-02-26 00:31:37,666:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:37,779:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,780:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,781:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,782:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,783:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,783:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:37,794:INFO:Calculating mean and std
+2025-02-26 00:31:37,795:INFO:Creating metrics dataframe
+2025-02-26 00:31:37,796:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:37,798:INFO:Uploading results into container
+2025-02-26 00:31:37,798:INFO:Uploading model into container now
+2025-02-26 00:31:37,798:INFO:_master_model_container: 11
+2025-02-26 00:31:37,798:INFO:_display_container: 2
+2025-02-26 00:31:37,800:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=OrthogonalMatchingPursuit(), sp=2,
+                    window_length=2)
+2025-02-26 00:31:37,800:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:37,905:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:37,905:INFO:Creating metrics dataframe
+2025-02-26 00:31:37,913:INFO:Initializing K Neighbors w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:37,913:INFO:Total runtime is 0.3583372910817465 minutes
+2025-02-26 00:31:37,915:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:37,915:INFO:Initializing create_model()
+2025-02-26 00:31:37,915:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=knn_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:37,915:INFO:Checking exceptions
+2025-02-26 00:31:37,915:INFO:Importing libraries
+2025-02-26 00:31:37,915:INFO:Copying training dataset
+2025-02-26 00:31:37,917:INFO:Defining folds
+2025-02-26 00:31:37,917:INFO:Declaring metric variables
+2025-02-26 00:31:37,920:INFO:Importing untrained model
+2025-02-26 00:31:37,923:INFO:K Neighbors w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:37,929:INFO:Starting cross validation
+2025-02-26 00:31:37,929:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:38,042:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,043:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,048:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,048:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,050:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,050:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,059:INFO:Calculating mean and std
+2025-02-26 00:31:38,060:INFO:Creating metrics dataframe
+2025-02-26 00:31:38,061:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:38,062:INFO:Uploading results into container
+2025-02-26 00:31:38,063:INFO:Uploading model into container now
+2025-02-26 00:31:38,063:INFO:_master_model_container: 12
+2025-02-26 00:31:38,063:INFO:_display_container: 2
+2025-02-26 00:31:38,064:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=KNeighborsRegressor(n_jobs=-1), sp=2,
+                    window_length=2)
+2025-02-26 00:31:38,064:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:38,168:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:38,168:INFO:Creating metrics dataframe
+2025-02-26 00:31:38,174:INFO:Initializing Decision Tree w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:38,174:INFO:Total runtime is 0.362698527177175 minutes
+2025-02-26 00:31:38,177:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:38,177:INFO:Initializing create_model()
+2025-02-26 00:31:38,177:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=dt_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:38,177:INFO:Checking exceptions
+2025-02-26 00:31:38,177:INFO:Importing libraries
+2025-02-26 00:31:38,177:INFO:Copying training dataset
+2025-02-26 00:31:38,179:INFO:Defining folds
+2025-02-26 00:31:38,179:INFO:Declaring metric variables
+2025-02-26 00:31:38,181:INFO:Importing untrained model
+2025-02-26 00:31:38,185:INFO:Decision Tree w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:38,190:INFO:Starting cross validation
+2025-02-26 00:31:38,191:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:38,294:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,294:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,294:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,294:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,296:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,296:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,302:INFO:Calculating mean and std
+2025-02-26 00:31:38,303:INFO:Creating metrics dataframe
+2025-02-26 00:31:38,304:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:38,306:INFO:Uploading results into container
+2025-02-26 00:31:38,306:INFO:Uploading model into container now
+2025-02-26 00:31:38,306:INFO:_master_model_container: 13
+2025-02-26 00:31:38,306:INFO:_display_container: 2
+2025-02-26 00:31:38,307:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=DecisionTreeRegressor(random_state=123), sp=2,
+                    window_length=2)
+2025-02-26 00:31:38,308:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:38,411:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:38,411:INFO:Creating metrics dataframe
+2025-02-26 00:31:38,418:INFO:Initializing Random Forest w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:38,419:INFO:Total runtime is 0.36676766872406014 minutes
+2025-02-26 00:31:38,421:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:38,422:INFO:Initializing create_model()
+2025-02-26 00:31:38,422:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=rf_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:38,422:INFO:Checking exceptions
+2025-02-26 00:31:38,422:INFO:Importing libraries
+2025-02-26 00:31:38,422:INFO:Copying training dataset
+2025-02-26 00:31:38,424:INFO:Defining folds
+2025-02-26 00:31:38,424:INFO:Declaring metric variables
+2025-02-26 00:31:38,426:INFO:Importing untrained model
+2025-02-26 00:31:38,430:INFO:Random Forest w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:38,436:INFO:Starting cross validation
+2025-02-26 00:31:38,437:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:38,660:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,660:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,665:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,666:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,672:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,672:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,677:INFO:Calculating mean and std
+2025-02-26 00:31:38,679:INFO:Creating metrics dataframe
+2025-02-26 00:31:38,680:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:38,681:INFO:Uploading results into container
+2025-02-26 00:31:38,681:INFO:Uploading model into container now
+2025-02-26 00:31:38,682:INFO:_master_model_container: 14
+2025-02-26 00:31:38,682:INFO:_display_container: 2
+2025-02-26 00:31:38,684:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=RandomForestRegressor(n_jobs=-1, random_state=123),
+                    sp=2, window_length=2)
+2025-02-26 00:31:38,685:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:38,790:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:38,790:INFO:Creating metrics dataframe
+2025-02-26 00:31:38,798:INFO:Initializing Extra Trees w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:38,798:INFO:Total runtime is 0.37309661308924363 minutes
+2025-02-26 00:31:38,801:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:38,801:INFO:Initializing create_model()
+2025-02-26 00:31:38,801:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=et_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:38,801:INFO:Checking exceptions
+2025-02-26 00:31:38,801:INFO:Importing libraries
+2025-02-26 00:31:38,801:INFO:Copying training dataset
+2025-02-26 00:31:38,803:INFO:Defining folds
+2025-02-26 00:31:38,803:INFO:Declaring metric variables
+2025-02-26 00:31:38,805:INFO:Importing untrained model
+2025-02-26 00:31:38,808:INFO:Extra Trees w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:38,815:INFO:Starting cross validation
+2025-02-26 00:31:38,815:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:38,996:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:38,996:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,003:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,003:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,003:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,004:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,017:INFO:Calculating mean and std
+2025-02-26 00:31:39,018:INFO:Creating metrics dataframe
+2025-02-26 00:31:39,019:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:39,020:INFO:Uploading results into container
+2025-02-26 00:31:39,020:INFO:Uploading model into container now
+2025-02-26 00:31:39,021:INFO:_master_model_container: 15
+2025-02-26 00:31:39,021:INFO:_display_container: 2
+2025-02-26 00:31:39,023:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=ExtraTreesRegressor(n_jobs=-1, random_state=123),
+                    sp=2, window_length=2)
+2025-02-26 00:31:39,023:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:39,129:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:39,129:INFO:Creating metrics dataframe
+2025-02-26 00:31:39,137:INFO:Initializing Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:39,137:INFO:Total runtime is 0.37874572277069096 minutes
+2025-02-26 00:31:39,139:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:39,140:INFO:Initializing create_model()
+2025-02-26 00:31:39,140:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=gbr_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:39,140:INFO:Checking exceptions
+2025-02-26 00:31:39,140:INFO:Importing libraries
+2025-02-26 00:31:39,140:INFO:Copying training dataset
+2025-02-26 00:31:39,142:INFO:Defining folds
+2025-02-26 00:31:39,142:INFO:Declaring metric variables
+2025-02-26 00:31:39,144:INFO:Importing untrained model
+2025-02-26 00:31:39,147:INFO:Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:39,153:INFO:Starting cross validation
+2025-02-26 00:31:39,154:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:39,352:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,352:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,354:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,354:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,357:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,357:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,367:INFO:Calculating mean and std
+2025-02-26 00:31:39,367:INFO:Creating metrics dataframe
+2025-02-26 00:31:39,369:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:39,371:INFO:Uploading results into container
+2025-02-26 00:31:39,371:INFO:Uploading model into container now
+2025-02-26 00:31:39,371:INFO:_master_model_container: 16
+2025-02-26 00:31:39,371:INFO:_display_container: 2
+2025-02-26 00:31:39,373:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=GradientBoostingRegressor(random_state=123), sp=2,
+                    window_length=2)
+2025-02-26 00:31:39,373:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:39,476:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:39,476:INFO:Creating metrics dataframe
+2025-02-26 00:31:39,484:INFO:Initializing AdaBoost w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:39,484:INFO:Total runtime is 0.38452891906102504 minutes
+2025-02-26 00:31:39,487:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:39,487:INFO:Initializing create_model()
+2025-02-26 00:31:39,487:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=ada_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:39,487:INFO:Checking exceptions
+2025-02-26 00:31:39,487:INFO:Importing libraries
+2025-02-26 00:31:39,487:INFO:Copying training dataset
+2025-02-26 00:31:39,489:INFO:Defining folds
+2025-02-26 00:31:39,489:INFO:Declaring metric variables
+2025-02-26 00:31:39,491:INFO:Importing untrained model
+2025-02-26 00:31:39,494:INFO:AdaBoost w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:39,500:INFO:Starting cross validation
+2025-02-26 00:31:39,501:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:31:39,668:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,669:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,669:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,669:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,670:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,670:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:31:39,681:INFO:Calculating mean and std
+2025-02-26 00:31:39,683:INFO:Creating metrics dataframe
+2025-02-26 00:31:39,685:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:31:39,686:INFO:Uploading results into container
+2025-02-26 00:31:39,686:INFO:Uploading model into container now
+2025-02-26 00:31:39,687:INFO:_master_model_container: 17
+2025-02-26 00:31:39,687:INFO:_display_container: 2
+2025-02-26 00:31:39,688:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=AdaBoostRegressor(random_state=123), sp=2,
+                    window_length=2)
+2025-02-26 00:31:39,688:INFO:create_model() successfully completed......................................
+2025-02-26 00:31:39,793:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:31:39,793:INFO:Creating metrics dataframe
+2025-02-26 00:31:39,800:INFO:Initializing Light Gradient Boosting w/ Cond. Deseasonalize & Detrending
+2025-02-26 00:31:39,800:INFO:Total runtime is 0.38979311386744186 minutes
+2025-02-26 00:31:39,802:INFO:SubProcess create_model() called ==================================
+2025-02-26 00:31:39,803:INFO:Initializing create_model()
+2025-02-26 00:31:39,803:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=lightgbm_cds_dt, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=False, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x7f4ccdd44a90>, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:31:39,803:INFO:Checking exceptions
+2025-02-26 00:31:39,803:INFO:Importing libraries
+2025-02-26 00:31:39,803:INFO:Copying training dataset
+2025-02-26 00:31:39,805:INFO:Defining folds
+2025-02-26 00:31:39,805:INFO:Declaring metric variables
+2025-02-26 00:31:39,807:INFO:Importing untrained model
+2025-02-26 00:31:39,811:INFO:Light Gradient Boosting w/ Cond. Deseasonalize & Detrending Imported successfully
+2025-02-26 00:31:39,817:INFO:Starting cross validation
+2025-02-26 00:31:39,818:INFO:Cross validating with ExpandingWindowSplitter(fh=ForecastingHorizon([1], dtype='int64', is_relative=True),
+                        initial_window=610), n_jobs=-1
+2025-02-26 00:34:33,861:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:34:33,862:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:34:35,576:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:34:35,576:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:34:35,616:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:34:35,617:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/sklearn/metrics/_regression.py:483: FutureWarning: 'squared' is deprecated in version 1.4 and will be removed in 1.6. To calculate the root mean squared error, use the function'root_mean_squared_error'.
+  warnings.warn(
+
+2025-02-26 00:34:35,623:INFO:Calculating mean and std
+2025-02-26 00:34:35,624:INFO:Creating metrics dataframe
+2025-02-26 00:34:35,626:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/time_series/forecasting/oop.py:2694: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+  model_results = pd.concat((model_results, model_avgs), axis=0)
+
+2025-02-26 00:34:35,627:INFO:Uploading results into container
+2025-02-26 00:34:35,627:INFO:Uploading model into container now
+2025-02-26 00:34:35,628:INFO:_master_model_container: 18
+2025-02-26 00:34:35,628:INFO:_display_container: 2
+2025-02-26 00:34:35,630:INFO:BaseCdsDtForecaster(fe_target_rr=[WindowSummarizer(lag_feature={'lag': [2, 1]},
+                                                   n_jobs=1)],
+                    regressor=LGBMRegressor(n_jobs=-1, random_state=123), sp=2,
+                    window_length=2)
+2025-02-26 00:34:35,630:INFO:create_model() successfully completed......................................
+2025-02-26 00:34:35,734:INFO:SubProcess create_model() end ==================================
+2025-02-26 00:34:35,734:INFO:Creating metrics dataframe
+2025-02-26 00:34:35,743:WARNING:/home/kimbiaw/term_project1-2/venv/lib/python3.10/site-packages/pycaret/internal/pycaret_experiment/supervised_experiment.py:323: FutureWarning: Styler.applymap has been deprecated. Use Styler.map instead.
+  master_display_.apply(
+
+2025-02-26 00:34:35,749:INFO:Initializing create_model()
+2025-02-26 00:34:35,749:INFO:create_model(self=<pycaret.time_series.forecasting.oop.TSForecastingExperiment object at 0x7f4ccefd9030>, estimator=AutoARIMA(random_state=123, sp=2, suppress_warnings=True), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2025-02-26 00:34:35,749:INFO:Checking exceptions
+2025-02-26 00:34:35,751:INFO:Importing libraries
+2025-02-26 00:34:35,751:INFO:Copying training dataset
+2025-02-26 00:34:35,752:INFO:Defining folds
+2025-02-26 00:34:35,752:INFO:Declaring metric variables
+2025-02-26 00:34:35,752:INFO:Importing untrained model
+2025-02-26 00:34:35,752:INFO:Declaring custom model
+2025-02-26 00:34:35,753:INFO:Auto ARIMA Imported successfully
+2025-02-26 00:34:35,753:INFO:Cross validation set to False
+2025-02-26 00:34:35,753:INFO:Fitting Model
+2025-02-26 00:34:43,263:INFO:AutoARIMA(random_state=123, sp=2, suppress_warnings=True)
+2025-02-26 00:34:43,263:INFO:create_model() successfully completed......................................
+2025-02-26 00:34:43,385:INFO:_master_model_container: 18
+2025-02-26 00:34:43,385:INFO:_display_container: 2
+2025-02-26 00:34:43,385:INFO:AutoARIMA(random_state=123, sp=2, suppress_warnings=True)
+2025-02-26 00:34:43,385:INFO:compare_models() successfully completed......................................
