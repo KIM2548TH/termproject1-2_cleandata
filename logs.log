@@ -15227,3 +15227,26 @@ ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
   warnings.warn(traceback.format_exc())
 
 2025-02-27 22:35:24,735:WARNING:predict_model >> Prediction Indices do not match test indices. Metrics will not be displayed.
+2025-02-28 20:49:11,148:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2025-02-28 20:49:11,220:INFO:PyCaret TSForecastingExperiment
+2025-02-28 20:49:11,220:INFO:Logging name: ts-default-name
+2025-02-28 20:49:11,220:INFO:ML Usecase: MLUsecase.TIME_SERIES
+2025-02-28 20:49:11,220:INFO:version 3.3.2
+2025-02-28 20:49:11,220:INFO:Initializing setup()
+2025-02-28 20:49:11,220:INFO:self.USI: 7365
+2025-02-28 20:49:11,220:INFO:self._variable_keys: {'memory', 'X_train', 'y_test', 'primary_sp_to_use', 'n_jobs_param', 'X_train_transformed', 'index_type', 'y_train', 'all_sps_to_use', 'y_train_transformed', 'seasonality_present', 'fold_generator', 'fold_param', 'y', 'y_transformed', 'gpu_param', 'USI', '_available_plots', 'gpu_n_jobs_param', 'X_test_transformed', 'strictly_positive', 'X_transformed', 'pipeline', 'log_plots_param', 'candidate_sps', 'exp_name_log', 'idx', 'fh', 'X_test', 'data', 'model_engines', 'exogenous_present', 'approach_type', 'logging_param', 'exp_id', 'significant_sps_no_harmonics', 'html_param', 'y_test_transformed', 'significant_sps', 'seed', 'enforce_pi', '_ml_usecase', 'enforce_exogenous', 'X'}
+2025-02-28 20:49:11,220:INFO:Checking environment
+2025-02-28 20:49:11,220:INFO:python_version: 3.10.0
+2025-02-28 20:49:11,220:INFO:python_build: ('v3.10.0:b494f5935c', 'Oct  4 2021 14:59:19')
+2025-02-28 20:49:11,220:INFO:machine: arm64
+2025-02-28 20:49:11,220:INFO:platform: macOS-15.2-arm64-arm-64bit
+2025-02-28 20:49:11,220:INFO:Memory: svmem(total=17179869184, available=4417617920, percent=74.3, used=6258343936, free=63668224, active=4361535488, inactive=4313628672, wired=1896808448)
+2025-02-28 20:49:11,220:INFO:Physical Core: 8
+2025-02-28 20:49:11,220:INFO:Logical Core: 8
+2025-02-28 20:49:11,220:INFO:Checking libraries
+2025-02-28 20:49:11,220:INFO:System:
+2025-02-28 20:49:11,221:INFO:    python: 3.10.0 (v3.10.0:b494f5935c, Oct  4 2021, 14:59:19) [Clang 12.0.5 (clang-1205.0.22.11)]
+2025-02-28 20:49:11,221:INFO:executable: /Users/pittachiox/Desktop/termproject/venv/bin/python
+2025-02-28 20:49:11,221:INFO:   machine: macOS-15.2-arm64-arm-64bit
+2025-02-28 20:49:11,221:INFO:PyCaret required dependencies:
