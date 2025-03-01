@@ -15250,3 +15250,108 @@ ValueError: Found input variables with inconsistent numbers of samples: [1, 7]
 2025-02-28 20:49:11,221:INFO:executable: /Users/pittachiox/Desktop/termproject/venv/bin/python
 2025-02-28 20:49:11,221:INFO:   machine: macOS-15.2-arm64-arm-64bit
 2025-02-28 20:49:11,221:INFO:PyCaret required dependencies:
+2025-03-01 19:07:08,842:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:07:08,842:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:07:08,844:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:07:08,959:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:837: ValueWarning: No supported index is available. Prediction results will be given with an integer index beginning at `start`.
+  return get_prediction_index(
+
+2025-03-01 19:07:08,959:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:837: FutureWarning: No supported index is available. In the next version, calling this method in a model without a supported index will result in an exception.
+  return get_prediction_index(
+
+2025-03-01 19:07:15,767:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:07:15,768:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:07:15,768:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:07:15,829:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:837: ValueWarning: No supported index is available. Prediction results will be given with an integer index beginning at `start`.
+  return get_prediction_index(
+
+2025-03-01 19:07:15,830:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:837: FutureWarning: No supported index is available. In the next version, calling this method in a model without a supported index will result in an exception.
+  return get_prediction_index(
+
+2025-03-01 19:08:22,081:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:08:22,081:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:08:22,082:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:08:22,141:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:837: ValueWarning: No supported index is available. Prediction results will be given with an integer index beginning at `start`.
+  return get_prediction_index(
+
+2025-03-01 19:08:22,142:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:837: FutureWarning: No supported index is available. In the next version, calling this method in a model without a supported index will result in an exception.
+  return get_prediction_index(
+
+2025-03-01 19:10:29,028:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:10:29,029:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:10:29,029:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:10:29,103:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:837: ValueWarning: No supported index is available. Prediction results will be given with an integer index beginning at `start`.
+  return get_prediction_index(
+
+2025-03-01 19:10:29,103:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:837: FutureWarning: No supported index is available. In the next version, calling this method in a model without a supported index will result in an exception.
+  return get_prediction_index(
+
+2025-03-01 19:10:41,316:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:10:41,317:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:10:41,317:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:10:41,445:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:837: ValueWarning: No supported index is available. Prediction results will be given with an integer index beginning at `start`.
+  return get_prediction_index(
+
+2025-03-01 19:10:41,445:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:837: FutureWarning: No supported index is available. In the next version, calling this method in a model without a supported index will result in an exception.
+  return get_prediction_index(
+
+2025-03-01 19:12:09,171:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:12:09,172:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:12:09,172:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:12:09,283:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:837: ValueWarning: No supported index is available. Prediction results will be given with an integer index beginning at `start`.
+  return get_prediction_index(
+
+2025-03-01 19:12:09,283:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:837: FutureWarning: No supported index is available. In the next version, calling this method in a model without a supported index will result in an exception.
+  return get_prediction_index(
+
+2025-03-01 19:13:25,112:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:13:25,113:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:13:25,114:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:473: ValueWarning: An unsupported index was provided. As a result, forecasts cannot be generated. To use the model for forecasting, use one of the supported classes of index.
+  self._init_dates(dates, freq)
+
+2025-03-01 19:13:25,192:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:837: ValueWarning: No supported index is available. Prediction results will be given with an integer index beginning at `start`.
+  return get_prediction_index(
+
+2025-03-01 19:13:25,192:WARNING:/Users/pittachiox/Desktop/termproject/venv/lib/python3.10/site-packages/statsmodels/tsa/base/tsa_model.py:837: FutureWarning: No supported index is available. In the next version, calling this method in a model without a supported index will result in an exception.
+  return get_prediction_index(
+
